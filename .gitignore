@@ -7,6 +7,7 @@ pom.xml.next
 pom.properties
 release.properties
 dependency-reduced-pom.xml
+/bin
 
 # Eclipse IDE
 .settings/
