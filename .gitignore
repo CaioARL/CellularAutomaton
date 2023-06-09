@@ -1,0 +1,30 @@
+# Arquivos e diretórios específicos do Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# Eclipse IDE
+.settings/
+.classpath
+.project
+.factorypath
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# NetBeans IDE
+nbproject/private/
+
+# Arquivos de log
+*.log
+
+# Arquivos compilados Java
+*.class
