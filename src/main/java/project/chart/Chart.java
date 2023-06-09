@@ -10,10 +10,10 @@ import org.knowm.xchart.SwingWrapper;
 
 public class Chart {
 
-	public void showChart(List<Integer> infectedCounts, List<Integer> recoveredCounts,
-			List<Integer> susceptibleCounts) {
+	public void showChart(List<Integer> infectedCounts, List<Integer> recoveredCounts, List<Integer> susceptibleCounts,
+			int finalInfected, int finalRecovered, int finalSusceptible) {
 
-		CategoryChart chart = new CategoryChartBuilder().width(800).height(600)
+		CategoryChart chart = new CategoryChartBuilder().width(1600).height(600)
 				.title("Número de infectados, recuperados e suscetíveis ao longo do tempo").xAxisTitle("Etapa")
 				.yAxisTitle("Número de indivíduos").build();
 
@@ -24,9 +24,9 @@ public class Chart {
 		chart.getStyler().setPlotBackgroundColor(Color.WHITE);
 		chart.getStyler().setLegendVisible(true);
 
-		chart.addSeries("Infectados", null, infectedCounts);
-		chart.addSeries("Recuperados", null, recoveredCounts);
-		chart.addSeries("Suscetíveis", null, susceptibleCounts);
+		chart.addSeries("Infectados (" + finalInfected + ")", null, infectedCounts);
+		chart.addSeries("Recuperados (" + finalRecovered + ")", null, recoveredCounts);
+		chart.addSeries("Suscetíveis (" + finalSusceptible + ")", null, susceptibleCounts);
 
 		new SwingWrapper<>(chart).displayChart();
 	}
