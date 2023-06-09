@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.edu.sp.ifsp</groupId>
 	<artifactId>CellularAutomaton</artifactId>
-	<version>1.1.0</version>
+	<version>develop-SNAPSHOT</version>
 	<name>Archetype - CellularAutomaton</name>
 	<url>http://maven.apache.org</url>
 	
