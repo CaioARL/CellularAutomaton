@@ -2,20 +2,15 @@ package project.util;
 
 public enum Util {
 
-    GRIDSIZE(25),
-    NUMSTEPS(40),
-    INITIALINFECTED(5),
-    
-    INFECTIONRATE(0.99),
-    RECOVERYRATE(0.01),
-    VACCINATIONRATE(0.0),
-    
-    IMPORTRATE(0.05);
-    
+	GRIDSIZE(10), NUMSTEPS(50),
 
-    private double percentage;
-    private int value;
-    
+	INITIALINFECTED(1), INFECTIONRATE(0.99), RECOVERYRATE(0.01), VACCINATIONRATE(0.00),
+
+	IMPORTRATE(0.05);
+
+	private double percentage;
+	private int value;
+
 	private Util(int value) {
 		this.value = value;
 	}
@@ -30,6 +25,6 @@ public enum Util {
 
 	public int getValue() {
 		return value;
-	} 
-    
+	}
+
 }
